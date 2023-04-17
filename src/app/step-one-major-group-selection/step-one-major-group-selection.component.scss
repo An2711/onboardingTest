@@ -1,0 +1,87 @@
+// step1-major-group-selection-container (column)
+//   instruction (row)
+//     puzzle (element)
+//     all-speech (element)
+//       text (element)
+//   cards (row)
+//     card (element)
+//       career (element)
+
+@import url(//fonts.googleapis.com/css?family=Open+Sans|Open+Sans|Open+Sans:400);
+@import url(//fonts.googleapis.com/css?family=Barlow|Barlow|Barlow:700);
+:host {
+  .step1-major-group-selection-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .instruction {
+      width: 809px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 20px 0px 32px 0px;
+
+      .puzzle {
+        width: 139px;
+        display: flex;
+        align-self: end;
+        margin-right: -8px;
+      }
+      
+      .all-speech {
+        background: #F0FAFF;
+        border-radius: 9px;
+        width: 670px;
+        height: 106px;
+        display: flex;
+        align-self: flex-start;
+        z-index: -1;
+
+        .text {
+          font-family: 'Open Sans';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 24px;
+          color: #000000;
+          width: 611px;
+          display: flex;
+          margin: auto;
+          align-self: center;
+        }
+      }
+    }
+    
+    //when should certain cards be given certain colors?
+    .cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex-shrink: 0;
+      
+      .card {
+        background: #47A1C5;
+        border: 0.772153px solid #47A1C5;
+        box-shadow: 0px 3px 12px #C7C7C7;
+        border-radius: 9px;
+        width: 100px;
+        height: 102px;
+
+        .career {
+          font-family: 'Barlow';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 11px;
+          line-height: 150%;
+          text-align: center;
+          letter-spacing: 0.045em;
+          color: #FFFFFF;
+          width: 100%;
+          height: 16px;
+        }
+      }
+    }
+  }
+}
